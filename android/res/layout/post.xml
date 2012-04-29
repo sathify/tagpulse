@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/ggg">
+	
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/labelwhatshappening"
+		android:textSize="30sp" android:gravity="center" />
+	<EditText  android:id="@+id/textStatus"
+		android:maxLength="140"
+		android:maxLines="4" android:padding="5px" android:layout_margin="5px" android:layout_width="fill_parent"
+		android:hint="@string/poststatus" android:layout_height="330px"></EditText>
+	<Button android:layout_height="wrap_content" android:id="@+id/buttonUpdate"
+		android:layout_width="fill_parent" android:text="Pulse it!"></Button>
+</LinearLayout>

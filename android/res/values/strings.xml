@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, main!</string>
+    <string name="app_name">TagPulse</string>
+<string name="labelwhatshappening">What\'s happening?</string>
+<string name="poststatus">Post status update with hash tags 140 characters </string>
+<string name="labelupdate">update</string>
+
+<string name="searchTag">Search</string>
+
+</resources>

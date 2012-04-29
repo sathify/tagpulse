@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:shrinkColumns="2" android:background="@drawable/ggg">
+	<TableRow>
+		<ImageView android:id="@+id/proImg" 
+			android:layout_width="85dp" android:layout_height="85dp"></ImageView>
+		<TextView android:id="@+id/TextView01" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="    Welcome to TagPulse" android:height="100px"></TextView>
+
+	</TableRow>
+	<TableRow>
+		<TextView android:id="@+id/TextView04" android:layout_height="wrap_content" android:text="User name :" android:layout_width="wrap_content"></TextView>
+		<TextView android:text="@+id/TextView05" android:id="@+id/TextView05"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+
+	</TableRow>
+	<TableRow>
+		<TextView android:id="@+id/TextView02" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="About me :"></TextView>
+		<TextView android:text="@+id/TextView03" android:id="@+id/TextView03"
+			android:layout_height="wrap_content"
+			android:height="100px" android:layout_width="wrap_content"></TextView>
+		
+	</TableRow>
+	<TableRow>
+		<TextView android:id="@+id/TextView06"
+			android:layout_height="wrap_content" android:text="Following :" android:layout_width="wrap_content"></TextView>
+			<TextView android:text="@+id/TextView07" android:id="@+id/TextView07"
+			android:layout_height="wrap_content" android:layout_width="wrap_content" android:height="50px"></TextView>
+	</TableRow>
+
+	<TableRow>
+		<EditText android:layout_height="fill_parent" android:layout_width="wrap_content" android:id="@+id/friend" android:text="enter name"></EditText>
+		<Button android:layout_height="wrap_content" android:text="Click to Follow" android:id="@+id/add"></Button>
+
+	</TableRow>
+
+</TableLayout>
+

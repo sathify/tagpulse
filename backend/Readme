@@ -1,0 +1,27 @@
+
+INSTRUCTIONS TO RUN.
+
+To run the HttpServer
+java -cp project.jar common.Server http httpport dataport dataip logfilename password
+
+To run the DataServer
+java -cp project.jar common.Server data dataport IPADDRESS PORT logfilename password
+
+Examples to run
+If the ip address provided in the command line is the same the systems ip address it is the first server being run. Other wise the server uses the ip
+address provided to issue boot strap request and set itself up.
+
+Example commands to run the servers.
+
+[skumar3@53008 project2]$  java -cp project.jar common.Server data 8020 138.202.171.48 8020 datalog1 satheesh
+
+[skumar3@hrn53006 project2]$ java -cp project.jar common.Server http 7000 8020 138.202.171.48 hplog1 satheesh
+
+[skumar3@hrn53002 project1.5]$ java -cp testclient.jar Client
+
+[skumar3@hrn23510 project2]$ java -cp project.jar common.Server data 8020 138.202.171.48 8020 datalog2 satheesh
+
+[skumar3@hrn53002 project2]$ java -cp project.jar common.Server data 8020 138.202.171.70 8020 datalog3 satheesh
+
+[skumar3@hrn53011 project2]$ java -cp project.jar common.Server http 7000 8020 138.202.171.70 hplog2 satheesh
+ 
