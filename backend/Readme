@@ -12,7 +12,7 @@ java -cp project.jar common.Server data dataport IPADDRESS PORT logfilename pass
 
 Examples to run
 
-If the IP address provided in the command line is the same as the systems IP address, it is the first server being run. Other wise the server uses the IP address provided to issue boot strap request and set itself up.
+If the IP address provided in the command line is the same as the systems IP address, it is the first server being run. Otherwise the server uses the IP address provided to issue bootstrap request and set itself up with all the data before being available.
 
 Example commands to run the servers.
 
