@@ -1,0 +1,14 @@
+TagPulse is a Twitter-like distributed Micro-blogging web service in JAVA. A new Httpserver or a Data Server can be added at any time and is configured by providing the IP address of one of the existing servers.  I distributed the data servers using LAZY replication, the servers are synchronized by GOSSIPING mechanism using JSON for communication. The system can handle n-1 failures and provides causal ordering of tweets using VECTOR clocks like Amazon's DYNAMO. I also implemented CACHING on the Http server to reduce bandwidth overhead. I used Unix SHELL scripts to launch and deploy all the servers automatically in different machines. Please feel free to check out my blog on Lazy Replication. http://satheesh7.blogspot.com/2010/12/lazy-replication.html
+
+TagPulse service provides RESTful APIs for,
+Users to POST tweet.(Pulse it)
+SEARCH for tweets(pulses) based on Hash Tags.
+Users can DELETE their pulses.
+Users can RE-PULSE other user's posts.
+FOLLOW other users.(Users get the time-lines of other users when they start following others)
+
+Also implemented gossiping, log table pruning, delete mechanism and handled failures robustly in the distributed environment. Like twitter you can follow other users, have user profiles and re-tweet.
+
+I also used this opportunity to learn and develop an ANDROID application for TagPulse using these APIs. I implemented OAUTH mechanism for secure authentication. I have uploaded a demo video of TagPulse, please use full screen 720p to watch it in HD.
+
+http://www.youtube.com/watch?feature=player_embedded&v=l2RmMFUrsLU
